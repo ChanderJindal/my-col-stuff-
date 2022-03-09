@@ -1,0 +1,23 @@
+table {
+    border: 1px solid black;
+    padding-left: 3mm;
+  }
+
+tr{
+    border: 1px solid blue;
+    align-content: center;
+    align-self: left;
+    padding-right: 5mm;
+}
+
+td{
+    border: 0.5px solid red;
+    align-self: center;
+    align-content: center;
+    padding-top: 4mm;
+}
+
+textarea{
+    height: 100;
+    width: 500;
+}
