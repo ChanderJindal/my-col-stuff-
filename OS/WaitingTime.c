@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #define N 10
-#define at 20
+#define at 10
 #define bt 50
 //FIFO
 
@@ -14,10 +15,14 @@ struct Pro
     float AW;
 };
 
-struct Pro MakeProcess(struct Pro pal){
+struct Pro MakeProcess(struct Pro pal,int flag){
 pal.P = rand()%N;
 for (int i =0;i< pal.P;i++){
+    if(flag != 0){
     pal.AT[i] = rand()%at;
+    }else{
+    pal.AT[i] = 0;
+    }
     pal.BT[i] = rand()%bt;
 }
 return pal;
@@ -45,7 +50,7 @@ void print(struct Pro pal){
 
 void run(){
     struct Pro pal;// = (struct Pro*) malloc(sizeof(struct  Pro));
-    pal = MakeProcess(pal);
+    pal = MakeProcess(pal,0);
     pal = CalcWaiting(pal);
     print(pal);
 }
