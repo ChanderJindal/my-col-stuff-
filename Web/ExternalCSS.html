@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>
+            CSS Usage
+        </title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="External.css"/>
+    <body>
+        <h3>
+            CHAPTER I: Basics of Algorithm Through Searching and Sorting
+        </h3>
+<p class="P-try"> 
+    What is an Algorithm?
+</p>
+<br>
+<p>
+So in this course, we are going to study algorithms and what are they an algorithm Is a computational procedure.
+</p>
+<p>
+Now what is a computational procedure mean?
+</p><p>
+So, here we can think of an algorithm as a box
+Which has some inputs And produces an output.</p><p> 
+All right, so that doesn't say much does it?</p><p> 
+So for example, what would be an example of an algorithm?</p><p> 
+For example, let us talk about some.The first example would be algorithm</p><p> 
+To multiply Two numbers
+Or even better algorithm To add two numbers
+Okay, now what's an algorithm to multiply two numbers? </p><p> 
+So, for example, suppose I gave you an input.</p><p> 
+The input would be two numbers n comma m and the output Must be their product m times n. 
+Okay, so this is an example of the specification so m and n are integers and output is the product of m and n all right.</p><p> 
+Now, as an example, or as an instance so whenever we plug in values for the input, we call it an instance of the problem.</p><p> 
+So what's an instance of this problem?</p><p> 
+So let us take n equals 121 and m equals 234. </p><p> 
+Fond memories of grade school. All right, and what is the algorithm the algorithm is going to be a step by step procedure. To perform this kind of multiplication. All right, now, how does this algorithm work? Well, I'm not going to go into the details of grade school multiplication. And in fact, it's coming up. We are actually going to study multiplication in this class. But let's recall what we did in grade school. So we know how to multiply things by a digit so we take the first digit four, and then we run through the, the multiplicand. All right, so now we get 484. Then we take the second digit but but now we shift one place. Multiply by 3. Now we get 363 and formerly a 0 there, 0 there. All right, then we take the third digit, we get 2 4 2. I'm going to stop writing the 0s, okay? Just like we did in grade school. And now you add 4 plus 0 is 4, gives a carry over of 1. 1 plus 8 is 9 plus 3 is 12, carry over of 1. 5 plus 6, 11 plus 2, 13, carry over of 1. 8 2. 
+So algorithms are not a new subject algorithms are in fact a very, very ancient subject where cultures around the world discovered that they needed to compute. And to compute, they needed procedures by which you could take things and run computations and come up with the answer. The earliest algorithms were kind of numerical algorithms. All right? Multiplying two numbers to find out that product for example. And that was required because we needed to compute the area of a rectangular piece of land, and the only way we could do it is measured both the sides and multiply them. All right, or people needed to predict when the next Eclipse was going to come. So they needed to do these calculations to figure out when the next Eclipse was coming when the next full moon was coming when the next tide was coming, so people had a lot of calculations. Okay and they needed algorithms to carry out these calculations. And the earliest kinds of algorithms that we know are for example, the algorithms that Chinese mathematicians did to calculate on the backers. Alright. So for example, calculations using our backers, alright. Indian mathematicians Ancient Indian mathematicians invented what we today call the place value number system, all right. And that was super important, because not only did they invent the place value number system, they also invented the arithmetic algorithms to go around with it.</p>
+<img src="xb.png">
+<p> 
+Then they were Greek mathematicians. Who invented algorithms for calculating things like gcds Euclidean algorithm? Remember finding if a number is prime, Eros tennis seive. So there were plenty of algorithms to go around from the ancient world. All right, and there were people who are doing calendar calculations.
+And because people wanted to calculate things in a systematic manner more than 
+algorithms was born, the study of algorithms. 
+</p><p> 
+Arabic numerals come in, okay, even though they were invented by Indian mathematicians and passed on to the Arab traders who came to trade, alright. And so we had Arabic numerals was so called Arabic numerals in the West. And because the book that was me wrote, was translated into Latin and studied by Western scholars. It became so popular that the tone that we use for algorithms comes from his name ,or more from the town that he came from, all right? And so we have modern algorithms, which are more complicated because we are really interested in Computed.
+</p><p> 
+A lot of mathematicians used to come up with algorithms, algorithms for solving equations, algorithms for computing the root of a polynomial. So, there were lots of algorithms that were invented From the ancient times,up to the pre-computing era in human history. Unfortunately, what happened to all those algorithms is people in mathematics taught about algorithms often as just an afterthought or not worth publishing. In fact, there are plenty of examples of very important algorithms that we use today that were not even deemed as worth publishing by their inventors.
+There are plenty of algorithms in history where people said, this is just an algorithm, the most important thing is the theorem. All right, but with the advent of computers, all of that changed, because 
+now there was a demand for efficient algorithms, things that we could compute. We wanted to multiply thousands digit numbers or 100,000 digit numbers, we wanted to find out if a million digit number was a prime. To do all of that, you needed a computer because human brains could not really do that kind of calculation in any finite amount of time without making a mistake, so we wanted computers. Once computers came, people quickly realized that they needed to study algorithms as a first class field of study by itself. </p><p> 
+So Turing came up in in the 1930s, Turing came up with a model of computation.
+Okay, and this model of computation is exactly the model of computation that works on your machine, okay? And in fact, there is a thesis called the Church Turing thesis, which says that any computer that can be physically realized in our world using the laws of physics, using silicone, using electronics, any computer that can be realized is exactly as powerful as Turing machine. Okay, which is what Turing called his model of computation, it's called a Turing machine. And once during defined a Turing machine, it became very clear to us what is a computational procedure.
+There is an ideal computational machine that does all the computations that we can describe as an algorithm, and that's called a Turing machine.</p><p> 
+So every time you log onto Google, you're actually relying on the power of rapid, 
+highly efficient algorithms to find the web-pages that are relevant for 
+your search.</p><p> 
+So suppose I wanted to search for best Greek restaurants.
+And I placed this search in Google, let's say, which is a good search engine that we keep using a lot, Suppose we do that, then how does this work? In the back end, what are the algorithms that are brought to bear about to carry out this search for us, right? There are many, many, many algorithms that have to be employed to fulfill this result. So what do we expect to see?
+We expect a page to pop up with a list of the best Greek restaurants with reviews. How many stars and typically they are not best Greek restaurants in Athens Greece or somewhere in the islands. They are the best Greek restaurants near us, okay? So, one of the things that happens is, it knows your GPS location.</p><p> 
+The approximate location from which you are asking. So what Google can do is it builds up an index.
+And this index has been built beforehand. And in this index, which is more like a hash table, something we will learn, you have a bunch of GPS locations or geographical locations. And from there you map to various search terms. So one of those search terms would be Greek restaurants. And from that search term, you have a list of locations, all right? And there is also a service where for each of these restaurants, you map to reviews for this restaurant, all right? And therefore, using this index, Google does a really fast search to find out, based on your query, it knows your GPS location. It understands that you are looking for restaurants. So using your GPS location, it gets the restaurants. It then gets the Greek restaurants and then it compiles the page and sends this back to you. And all of this needs to happen in milliseconds to seconds or else you think it's too slow to load. So this is an example of a bunch of algorithms that are in action to make all of this happen for you behind the scenes. Another example is if you are going to search for from a route from address A to address B. And let's say you're doing it on your favorite address, all right? Let's say you're doing it on your Ways app. Well nevertheless, what Ways has to do is it needs to know where address A is located on a physical map. It needs to know where address B is located on the physical map and it solves for a shortest path.</p><p> 
+It solves for a shortest path problem, okay? </p><p> 
+And it does so, and not only a shortest path, it also computes some alternative paths, not just so that you have some idea of what the routes are. And it looks at each of the paths, it looks at the current traffic information. The current traffic information and it estimates how long will you take to reach from A to B. So all of these rely on patching together a bunch of algorithms Every time you fly and you go to an airport.</p><p> 
+There are a lot of algorithms that are coming into play from the moment you board the airport on your gate, aeroplane on your gate, until takeoff and even after takeoff. What are these kinds of algorithms? </p><p> 
+So for example, in any airport you have a resource constraint. You have a few runways or you have a few taxiways for planes to land, all right? And you have lots of planes that are waiting to land, all right? So an air traffic manager needs to schedule these planes who are waiting to land. So this is not usually automated. This is often done manually, but once they are landed, then each plane needs to be assigned to a gate.
+Okay, so this assignment of planes to gates is going to be a hard problem. So it's an example of an assignment problem.</p><p> 
+Okay, for which we will look at efficient algorithms. The idea of assigning scheduling planes to that or 
+landing onto the taxiway is an example of a scheduling problem for which there are efficient algorithms.</p><p> 
+And they come up in a lot of context scheduling problem, assignment problem. And then, for example, once you are ready to take off, there is a scheduling problem where the runway needs to be scheduled for all the planes that are waiting to take off from the runway, all right? So that's an example of a scheduling problem, all right? So every time you go to the airport you see there is a lot of logistics that are going on in the background, which are being handled by algorithms. I don't even want to talk about how your bags that you check in are going to be handled so that they reach the plane on which you are flying, all right? So that's a whole logistical nightmare. There are tons of algorithms.</p><p> 
+The airline doesn't reserve an airplane to your route. Usually it doesn't work that way. Usually what happens is the airline tries to schedule the airplanes that it has available to the routes that it needs to fly. And sometimes, if things get delayed, you might find a different airplane is brought into service.Or if an airplane breaks down, if there is a technical fault in your airplane, then a different plane is brought to take you from A to B. And those kinds of problems are called vehicle routing problems or vehicle assignment problems.</p><p> 
+So there's a ton of logistic problems that happen every time you go to an airport and you would like to go from destination A to destination B. Another example of algorithms come in would be for example, <br>
+suppose you send a package through FedEx.</p><p> 
+Now, FedEx has algorithms that are going to schedule your package on the right plane or the right transport to get from A to B. When you get from A to B then there is a truck that has a bunch of packages that need to be delivered to a bunch of addresses and the truck needs to come back to the same place it started, to the depot, all right? And this is called a traveling salesperson problem.
+Or TSP, which is a very, very difficult problem to solve. If you can solve it efficiently, you can end up saving companies like FedEx a ton of money.</p><p> 
+If any efficiency gains you can make and solving TSP problems will mean a lot of money to a lot of people. So this is an example of an algorithm that can make a huge impact on people. Another example of where algorithms get used are places like, you will find them in all the odd places for example, if you are a medical student.
+</p><p>
+Okay, and you're looking for a residency.
+</p><p> 
+All right, so there is something called a national, Residency match program. Okay, which assigns medical students to the residency that they would like to go to. And this runs is based on an algorithm called a Stable Marriage Algorithm. And the people who invented this algorithm won the Nobel Prize.
+</p><p>
+Okay, so they were from economics and because of this invention of algorithm for 
+efficient allocation of resources, efficient,
+They won the algorithm for designing this algorithm called the Stable Marriage Algorithm.
+And came up with a very flippant version of this problem of assigning men who would like to go on a date with the men. But it turned out to be really useful. It's used for assigning residents, people who have finished medical training to hospitals that are looking for trainees to staff positions and their residents want to have a job right? No resident wants to be left without the opportunity to train and valuable training spots in hospitals need to be filled and people need to be treated. So with this program, you get efficiency, you get residents who are looking for a job, get a job. Hospitals that have a vacancy, get a vacancy and this is a really great algorithm. It's also being used for matching kidney donors to kidney patients. All right, so there is a ton of places in our life where algorithms come in and  help us be efficient, help us avoid wastage, help schedule things, help assign jobs to people.
+</p>
+    </body>
+</html>
