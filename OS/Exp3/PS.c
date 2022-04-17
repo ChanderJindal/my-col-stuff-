@@ -21,7 +21,7 @@ struct Pro
 };
 
 struct Pro MakeProcess(struct Pro pal){
-pal.P = 5;//rand()%N;
+pal.P = rand()%N;
 for (int i =0;i< pal.P;i++){
     pal.AT[i] = rand()%at;
     pal.BT[i] = rand()%bt;
