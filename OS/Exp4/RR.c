@@ -82,7 +82,7 @@ return TimeTaken;
 void CalcWaiting(struct Pro* pal){
     ATSorter(pal);
     int TimeTaken = TotalTime(*pal);
-    printf("%d\n",TimeTaken);
+    //printf("%d\n",TimeTaken);
     for(int i =0;i<TimeTaken;i++){
        // printf("Total Processes = %d\n",pal.P);
 

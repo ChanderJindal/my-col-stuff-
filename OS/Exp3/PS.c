@@ -30,6 +30,8 @@ for (int i =0;i< pal.P;i++){
     pal.WT[i] = 0;
     pal.TAT[i] = pal.BT[i];
 }
+pal.ATAT = 0;
+pal.AWT = 0;
 return pal;
 }
 

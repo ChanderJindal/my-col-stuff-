@@ -91,7 +91,7 @@ for(int i=0;i<MyStack->TotalProcesses;i++){
 
         for(int j =0;j<MyStack->TotalMemorySlots;j++){
             if(MyStack->MemorySlots[j] >= CurrentRequirement){
-                MyStack->MemorySlots[j] = -1;
+                MyStack->MemorySlots[j] = -(i+1);
                 MyStack->ProcessMemory[i] = 0;
                 CurrentRequirement = -1;
                 break;
