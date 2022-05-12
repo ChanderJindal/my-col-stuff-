@@ -119,6 +119,6 @@ void Process(struct Table* MyTable){
         }
         printf("\n");
     }    
-    printf("\nThe Total Faults in this set using LRU is %d.\n",MyTable->faults);
+    printf("\nThe Total Faults in this set using LRU Approach is %d.\n",MyTable->faults);
     printf("__________________________________________________\n");
 }
