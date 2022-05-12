@@ -85,12 +85,13 @@ void TotalFaults(struct Table* MyTable){
                     break;
                 }
             }
-            for(int j= ((CurrentIdx==-1)? TotalPages-1:CurrentIdx);j>0;j--)
-                MyTable->MyPages[j] = MyTable->MyPages[j-1];
-                
+            if(CurrentIdx == -1){
+                for(int j=TotalPages;j>0;j--)
+                    MyTable->MyPages[j] = MyTable->MyPages[j-1];
+                    
                 MyTable->MyPages[0] = MyTable->AllPages[i];
-            if(CurrentIdx==-1)
-            MyTable->faults += 1;
+                MyTable->faults += 1;
+            }
     }
 }
 
@@ -104,12 +105,13 @@ void Process(struct Table* MyTable){
                     break;
                 }
             }
-            for(int j= ((CurrentIdx==-1)? TotalPages-1:CurrentIdx);j>0;j--)
-                MyTable->MyPages[j] = MyTable->MyPages[j-1];
-                
+            if(CurrentIdx == -1){
+                for(int j=TotalPages;j>0;j--)
+                    MyTable->MyPages[j] = MyTable->MyPages[j-1];
+                    
                 MyTable->MyPages[0] = MyTable->AllPages[i];
-            if(CurrentIdx==-1)
-            MyTable->faults += 1;
+                MyTable->faults += 1;
+            }
         
         printf("For the #%dth Iteration the Pages are - ",i+1);
         for(int j = 0;j<TotalPages;j++)
