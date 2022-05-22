@@ -1,23 +1,17 @@
-#check prime or not
-read a
-declare -i flag
-declare flag="0"
-#echo " sqrt($a) " | bc
-declare -i i 
-declare i="1"
-while (( $i > $sqrt($a)+1 ))
-    do
-        ((i++))
-        echo $i
-        if (($a % $i == 0))
-            then
-                declare $flag = "1"
-                echo "$i"
-            fi      
+#check prime
+read a 
+flag=0
+for((i=2; i<=`echo "sqrt($a)" | bc`; i++))
+do
+    if [ $((a%i)) == 0 ]
+        then
+            flag=1 
+            break
+    fi
 done
-if (($flag == 1 ))
+if (( flag == 0  ))
     then
-        echo "The number $a is Prime"
+        echo "$a is a Prime Number"
 else
-    echo "The number $a is NOT Prime"
+    echo "$a is not a Prime Number"
 fi
