@@ -1,0 +1,94 @@
+<html>
+
+<head>
+
+<title> Form Validation:Password And Phone </title>
+
+<script>
+
+function formValidation()
+{
+var email = document.getElementById('email');
+var password =  document.getElementById('password');
+var number =  document.getElementById('number');
+
+emailValidation(email, "* Please enter a valid email address *")
+inputPassword(password, "* For your password please use alphabets and numbers only *");
+numberValidation(number, "* Please enter a valid phone number *")
+}
+function emailValidation(inputtext, alertMsg)
+{
+var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+if(inputtext.value.match(emailExp))
+{
+document.getElementById('p1').innerText = "* Entered Email Is Valid *"; 
+}
+else
+{
+document.getElementById('p1').innerText = alertMsg; 
+}
+}
+function inputPassword(inputtext, alertMsg){
+var LetterDigitExp = "^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]+$";
+if(inputtext.value.match(LetterDigitExp))
+{
+document.getElementById('p2').innerText = "* Entered Password Is Valid *"; 
+}
+else{
+document.getElementById('p2').innerText = alertMsg; 
+}
+}
+
+function numberValidation(inputtext, alertMsg)
+{
+var numericExpression = /^[0-9]+$/;
+if(inputtext.value.match(numericExpression)&&inputtext.value.length==10)
+{
+document.getElementById('p3').innerText = "* Entered Phone Number Is Valid *";
+}
+else
+{
+document.getElementById('p3').innerText = alertMsg;  
+}
+}
+
+</script>
+
+<style type = "text/css" media = "all">
+.footer 
+{
+    padding: 0.5cm 0 3em;
+}
+.footer p 
+{
+    font-size: 1em;
+    color: red;
+    letter-spacing: 2px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>JavaScript Form Validation</h2>
+<br><br><br><br>
+Email:
+<input type='text' id='email'><br><br><br><br>
+<p id="p1"></p>	
+<br><br><br><br>
+Password:
+<input type='text' id='password'><br><br><br><br>
+<p id="p2"></p>
+<br><br><br><br>
+Phone Number:
+<input type='text' id='number'><br><br><br><br>
+<p id="p3"></p>
+<br><br><br><br>
+<button onclick="formValidation()">Validate Form</button><br><br><br><br>
+
+
+
+</body>
+
+</html>
