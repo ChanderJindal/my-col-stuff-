@@ -1,4 +1,5 @@
 #check odd or even
+#2nd
 read a
 if (($a%2==0))
     then

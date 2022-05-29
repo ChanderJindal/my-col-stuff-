@@ -1,3 +1,5 @@
+#Check if input is Int or str
+#4th
 read a
 if [[ $a == $((a)) ]]
     then

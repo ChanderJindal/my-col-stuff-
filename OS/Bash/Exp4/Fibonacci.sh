@@ -1,4 +1,5 @@
-#Fibonacci series
+#Fibonacci series - 39
+#2nd
 read n
 
 if [[ n == 0 ]]
@@ -15,9 +16,9 @@ else
     echo "The #1 number of Fibonacci series is = 1"
     while(( i < n ))
         do  
+            ((i++))
             echo "The #$i number of Fibonacci series is = $second"
             second=$((second+first))
             first=$((second-first))
-            ((i++))
         done
 fi 

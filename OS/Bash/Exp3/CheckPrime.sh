@@ -1,4 +1,5 @@
 #check prime
+#3rd
 read a 
 flag=0
 for((i=2; i<=`echo "sqrt($a)" | bc`; i++))

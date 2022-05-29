@@ -1,4 +1,5 @@
 #Average of n numbers
+#1st
 echo "Enter N"
 read n 
 total=0
@@ -10,5 +11,5 @@ while (( i<=n ))
         total=$((temp+total))
         ((i++))
 done
-echo "$total"
-printf "%.4f" `echo "$((total/n))" | bc`
+echo "The Total Sum is = $total"
+printf "The Average is = %.4f \n" $(echo $total / $n | bc -l)

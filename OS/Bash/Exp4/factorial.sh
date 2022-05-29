@@ -1,4 +1,5 @@
 #factorial
+#3rd
 
 read n
 

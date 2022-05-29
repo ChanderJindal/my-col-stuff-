@@ -1,9 +1,8 @@
 #check Palindrome
+#5th
 read str 
 NewStr=`echo "$str" | rev`
 
-echo $str
-echo $NewStr
 if [[ "$NewStr" == "$str" ]]
     then
         echo "$str is a Palindrome."

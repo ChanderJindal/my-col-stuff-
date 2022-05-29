@@ -1,4 +1,5 @@
 #sum of digits
+#4th
 read n
 MyAnswer=0
 while ((n>0))
