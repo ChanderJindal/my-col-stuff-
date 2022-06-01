@@ -1,6 +1,6 @@
 #check prime
 #3rd
-read a 
+read a #test
 flag=0
 for((i=2; i<=`echo "sqrt($a)" | bc`; i++))
 do
