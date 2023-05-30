@@ -1,0 +1,15 @@
+// wmls
+extern function findmax() {
+var result1 = Dialogs.prompt("Enter 1st number",0);
+var result2 = Dialogs.prompt("Enter 2nd number",0);
+var maxnum = Lang.max(result1, result2);
+WMLBrowser.setVar("number1", result1);
+WMLBrowser.setVar("number2", result2);
+WMLBrowser.setVar("maxnumber", maxnum);
+WMLBrowser.go("exp6.wml#card2");
+}
+extern function findabs(){
+var num = Dialogs.prompt("Enter number", 0);
+var number = Lang.abs(num);
+WMLBrowser.setVar("number", number);
+WMLBrowser.go("exp6.wml#card3");}

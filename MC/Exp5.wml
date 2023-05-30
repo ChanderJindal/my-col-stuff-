@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN"
+"http://www.wapforum.org/DTD/wml13.dtd">
+<wml>
+<card id="ABC" title="Practical 5">
+<p>
+Hello World
+</p>
+<onevent type="ontimer">
+<go href="#ABC1"/>
+</onevent>
+<timer value="100"/>
+</card>
+<card id="ABC1" title="Practical 5">
+<p>Select a Tutorial :
+<select title="tutorials" name="selection_list">
+<option onpick="#xhtml">XHTML Tutorial</option>
+<option onpick="#wap">WAP Tutorial</option>
+</select>
+</p>
+</card>
+<card id="xhtml" title="Practical 5">
+<p>
+XHTML stands for EXtensibleHyperText Markup Language.
+</p>
+</card>
+<card id="wap" title="Practical 5">
+<p>
+Wireless Application Protocol (WAP) is a technical standard for accessing information over a mobile wireless network.
+</p>
+</card>
+</wml>

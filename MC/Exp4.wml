@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN"
+"http://www.wapforum.org/DTD/wml12.dtd">
+<wml>
+<card title="Practical4">
+<p> Select Name :
+<select>
+<option value="htm">Chander Jindal </option>
+<option value="xml">FirstName LastName</option>
+<option value="wap">FirstName1 LastName2</option>
+</select>
+</p>
+</card>
+</wml>

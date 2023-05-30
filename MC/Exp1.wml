@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+<wml>
+  <card id="card1" title="Formatted Text">
+    <p>
+      <b>Bold Text:</b> This is a bold text by Chander.
+    </p>
+    <p>
+      <i>Italic Text:</i> This is an italic text by Chander.
+    </p>
+    <p>
+      <u>Underlined Text:</u> This is an underlined text by Chander.
+    </p>
+    <p>
+      <big>Big Text:</big> This is a big text by Chander.
+    </p>
+    <p>
+      <small>Small Text:</small> This is a small text by Chander.
+    </p>
+    <p>
+      <a href="http://www.example.com">Link:</a> This is a link to example.com.
+    </p>
+    <p>
+      <anchor title="Anchor" href="anchor.wml">Anchor:</anchor> This is an anchor.
+    </p>
+  </card>
+</wml>

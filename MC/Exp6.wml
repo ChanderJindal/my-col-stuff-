@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd">
+<wml>
+<card id="card1">
+<p>
+<a href="exp6.wmls#findmax()">Find max</a>
+<br/>
+</p>
+<p>
+<a href="exp6.wmls#findabs()">Find abs</a>
+<br/>
+</p>
+</card>
+<card id="card2">
+<p> Max of two numbers is:
+$(maxnumber) </p>
+</card>
+<card id="card3">
+<p> Absolute value is: 2  </p>
+</card>
+</wml>
